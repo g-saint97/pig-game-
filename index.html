@@ -10,6 +10,35 @@
   </head>
   <body>
     <main>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>The Rules of Pig game 😍</h1>
+        <p>
+          <ol>
+            <li>The game is played with two players. </li>
+            <li>On each turn, a player rolls a
+              six-sided die as many times as they want, and each roll's value is
+              added to their turn total.</li>
+            <li>However, if the player rolls a 1 on any of
+              their rolls, their turn ends immediately, and they lose all the points
+              they accumulated during that turn. It is then the other player's turn.</li>
+            <li>A player can choose to "hold" their turn at any point, at which point
+              their turn total is added to their overall score. It then becomes the
+              other player's turn. </li>
+            <li>The first player to reach a score of 100 or more
+              points wins the game. </li>
+            <li>If both players reach 100 points or more in the
+              same turn, the player with the higher score wins.</li>
+            <li>If a player rolls a 1 on their first roll of their turn, they score no points, and their
+              turn ends immediately. It then becomes the other player's turn. </li>
+              <p>These
+                are the basic rules of the game. In the digital version of the game
+                you linked to, there may be additional features or variations, but
+                these rules should still apply.</p>
+          </ol>
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">43</p>
@@ -32,6 +61,8 @@
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
+    <button class="show-modal">📝Rules</button>
     <script src="script.js"></script>
   </body>
 </html>
+
